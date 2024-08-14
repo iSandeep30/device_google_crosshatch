@@ -14,5 +14,11 @@
   {
     "repository": "vendor_google_blueline",
     "target_path": "vendor/google/blueline"
+  },
+  {
+    "repository": "LineageOS/android_packages_apps_ElmyraService",
+    "target_path": "packages/apps/ElmyraService",
+    "remote": "github-non-los",
+    "branch": "lineage-21.0"
   }
 ]
