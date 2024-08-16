@@ -63,6 +63,9 @@ TARGET_NO_KERNEL := false
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_USES_METADATA_PARTITION := true
 
+# System Image
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
+
 # Board uses A/B OTA.
 AB_OTA_UPDATER := true
 
@@ -159,6 +162,9 @@ BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     vendor \
     product \
     system_ext
+    
+# Use erofs for vendor image.
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 
 ifeq ($(PRODUCT_RETROFIT_DYNAMIC_PARTITIONS), true)
 # Normal Pixel 3 must retrofit dynamic partitions.
